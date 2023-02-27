@@ -58,6 +58,6 @@ define( 'DB_HOST', 'db');
 ```
 
 # Access painel admin
-http://your-domain.test/wp-login.php
-username: admin
-password: admin
+Address: http://your-domain.test/wp-login.php <br>
+Username: admin <br>
+Password: admin <br>
