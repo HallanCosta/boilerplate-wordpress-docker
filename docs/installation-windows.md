@@ -1,16 +1,16 @@
-# Run docker-compose.yml
+## Run docker-compose.yml
 1. Running command docker compose to build and up container and configs from phpmyadmin, mysql and wordpress
 ```
 docker compose -f "docker-compose.yml" up -d --build 
 ```
 
-# Create virtualhost on windows
+## Create virtualhost on windows
 1. Inside directory <b>`C:\Windows\System32\drivers\etc`</b> add at end of line:
 ```
 127.0.0.1 your-domain.test
 ```
 
-# Create database and add permission on user
+## Create database and add permission on user
 1. Access phpmyadmin with 
 ```
 Address: http://your-domain.test:8080
@@ -25,7 +25,7 @@ password is empty
 CREATE DATABASE name_project DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
-# Install tables on database created
+## Install tables on database created
 1. Install the file <b>`install.sql`</b> in the created database that is inside the docs folder
 
 2. Insert the query sql
@@ -36,7 +36,7 @@ UPDATE wp_options SET option_value = REPLACE(option_value,'http://your-domain.te
 UPDATE wp_users SET user_url = REPLACE(user_url,'http://your-domain.test','http://CHANGE-DOMAIN.test') WHERE user_url LIKE '%http://your-domain.test%';
 ```
 
-# Configure wp-config inside folder wp
+## Configure wp-config inside folder wp
 change the code:
 
 ```
@@ -62,7 +62,7 @@ define( 'DB_PASSWORD', '');
 define( 'DB_HOST', 'db');
 ```
 
-# Access painel admin
+## Access painel admin
 ```
 Address: http://your-domain.test/wp-login.php
 Username: admin 
