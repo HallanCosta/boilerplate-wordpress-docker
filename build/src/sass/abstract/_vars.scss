@@ -1,0 +1,253 @@
+
+/* FUNCTIONS */
+
+@mixin for-size($size)
+{
+    @if $size == phone-320 {
+        @media (max-width: 320px) { @content; }
+    } @else if $size == phone-360 {
+        @media (max-width: 360px) { @content; }
+    } @else if $size == phonesmallest {
+        @media (max-width: 370px) { @content; }
+    } @else if $size == phone-400 {
+        @media (max-width: 400px) { @content; }
+    } @else if $size == phone-420 {
+        @media (max-width: 420px) { @content; }
+    } @else if $size == phone-450 {
+        @media (max-width: 450px) { @content; }
+    } @else if $size == phonesmall {
+        @media (max-width: 450px) { @content; }
+    } @else if $size == phone-480 {
+        @media (max-width: 480px) { @content; }
+    } @else if $size == phone-top-header {
+        @media (max-width: 500px) { @content; }
+    } @else if $size == phone-550 {
+        @media (max-width: 550px) { @content; }
+    } @else if $size == phone-580 {
+        @media (max-width: 580px) { @content; }
+    } @else if $size == phone {
+        @media (max-width: 600px) { @content; }
+    } @else if $size == phone-700 {
+        @media (max-width: 700px) { @content; }
+    } @else if $size == phone700 {
+        @media (max-width: 700px) { @content; }
+    } @else if $size == phone-720 {
+        @media (max-width: 720px) { @content; }
+    } @else if $size == tablet-768 {
+        @media (max-width: 768px) { @content; }
+    } @else if $size == tablet-800 {
+        @media (max-width: 800px) { @content; }
+    } @else if $size == footer-tablet {
+        @media (max-width: 800px) { @content; }
+    } @else if $size == tablet-865 {
+        @media (max-width: 865px) { @content; }
+    } @else if $size == tinysliderfix {
+        @media (max-width: 825px) { @content; }
+    } @else if $size == tablet-864 {
+        @media (max-width: 864px) { @content; }
+    } @else if $size == tablet-900 {
+        @media (max-width: 900px) { @content; }
+    } @else if $size == tablet-960 {
+        @media (max-width: 960px) { @content; }
+    } @else if $size == tablet {
+        @media (max-width: 1000px) { @content; }
+    } @else if $size == tabletup {
+        @media (min-width: 1000px) { @content; }
+    } @else if $size == desktop5 {
+        @media (max-width: 1024px) { @content; }
+    } @else if $size == desktop-1064 {
+        @media (max-width: 1064px) { @content; }
+    } @else if $size == desktop-header-address {
+        @media (max-width: 1064px) { @content; }
+    } @else if $size == desktop-1120 {
+        @media (max-width: 1120px) { @content; }
+    } @else if $size == desktop4 {
+        @media (max-width: 1139px) { @content; }
+    } @else if $size == desktopup {
+        @media (min-width: 1164px) { @content; }
+    } @else if $size == desktop-1164 {
+        @media (max-width: 1164px) { @content; }
+    } @else if $size == desktop {
+        @media (max-width: 1164px) { @content; }
+    } @else if $size == desktop-large {
+        @media (max-width: 1200px) { @content; }
+    } @else if $size == desktop-1200 {
+        @media (max-width: 1200px) { @content; }
+    } @else if $size == desktop-large-up {
+        @media (min-width: 1200px) { @content; }
+    } @else if $size == desktop-1280 {
+        @media (max-width: 1280px) { @content; }
+    } @else if $size == desktop-areas {
+        @media (max-width: 1280px) { @content; }
+    } @else if $size == desktop-areas-up {
+        @media (min-width: 1280px) { @content; }
+    } @else if $size == desktop-1320 {
+        @media (max-width: 1320px) { @content; }
+    } @else if $size == desktop-1366 {
+        @media (max-width: 1366px) { @content; }
+    } @else if $size == desktop-1440 {
+        @media (max-width: 1440px) { @content; }
+    } @else if $size == desktop-1580 {
+        @media (max-width: 1580px) { @content; }
+    } @else if $size == desktop-1620 {
+        @media (max-width: 1620px) { @content; }
+    } @else if $size == desktop-1680 {
+        @media (max-width: 1680px) { @content; }
+    } @else if $size == desktop-1870 {
+        @media (max-width: 1870px) { @content; }
+    }
+}
+
+
+
+/* PATH`S */
+
+$fa-font-path: '/wp-content/themes/supergols/assets/fonts/' !default;
+//$path_fonts: '/assets/fonts/';
+$path_images: '/wp-content/themes/supergols/assets/';
+
+
+
+/* LAYOUT SIZE */
+
+$container: 1170;
+
+// - Header
+$headerheight: 151px; // 125px;
+$headercontainer: 1170;
+$headercontainer-1366: 1170;
+$headercontainer-1280: 1170;
+$headerheight-subpage: 151px; // 125px; // 90px;
+$headerPadding: 35;
+$headerPadding-1366: 35;
+$headerPadding-1280: 37.5;
+$headerPadding-600: 20;
+
+// - Page header
+$pageHeaderHeight: 410px;
+
+$pageHeaderContainer: 1170;//1240;
+$pageHeaderContainer-1366: 1170;//1240;
+$pageHeaderContainer-1280: 1170;//1140;
+$pageHeaderContainerPadding: 35;
+$pageHeaderContainerPadding-1366: 35;
+$pageHeaderContainerPadding-1280: 37.5;
+$pageHeaderContainerPadding-600: 20;
+
+$pageBuscarHeaderContainer: 1140;
+$pageBuscarHeaderContainer-1366: 1140;
+$pageBuscarHeaderContainer-1280: 1140;
+$pageBuscarHeaderContainerPadding: 35;
+$pageBuscarHeaderContainerPadding-1366: 35;
+$pageBuscarHeaderContainerPadding-1280: 37.5;
+$pageBuscarHeaderContainerPadding-600: 20;
+
+$pageSuperDestaquesHeaderContainer: 1170;
+$pageSuperDestaquesHeaderContainer-1366: 1170;
+$pageSuperDestaquesHeaderContainer-1280: 1170;
+$pageSuperDestaquesHeaderContainerPadding: 35;
+$pageSuperDestaquesHeaderContainerPadding-1366: 35;
+$pageSuperDestaquesHeaderContainerPadding-1280: 37.5;
+$pageSuperDestaquesHeaderContainerPadding-600: 20;
+
+// - Detalhes do imóvel
+$imovelwidth: 1140px;
+$imovelheight: 427px;//500px;
+$imovelpadding: 37.457%;//43.86%;
+
+// - Banner
+$bannerwidth: 1920px;
+$bannerheight: 960px;
+$bannerpadding: 50%;
+
+// - HOME > Sobre block
+$container-sobre: 1285;
+
+// - A EMPRESA > Sobre block
+$container-a-empresa: 1170;
+$container-a-empresa-padding: 37.5;
+$container-a-empresa-600: 1170;
+$container-a-empresa-padding-600: 20;
+
+
+
+
+/* Z INDEX */
+
+$zi-projeto-content: 1;
+
+$zi-select: 1;
+$zi-select-mobile: 30;
+$zi-header: 10;
+$zi-menu-mobile: 30;
+
+$zi-tns-outer: 1;
+$zi-tns-nav-button: 1;
+$zi-tns-nav-button-before: 1;
+$zi-tns-controls-banner: 2;
+$zi-tns-controls-imovel: 2;
+$zi-tns-controls-imovel-home: 2;
+
+
+
+/* COLORS */
+
+$global-font-color: #484848;
+$color-default-bg: #f7f7f7; // body background-color 22/09
+
+// - Header
+$headerTextColorDefault: #FFFFFF;
+$headerTextColorHover: #b9b9b9;
+$headerMobileTextColorDefault: #FFFFFF;
+$headerMobileTextColorHover: #111111;
+$headerSubpageTextColorDefault: #484848;
+$headerSubpageTextColorHover: #c2171d;
+$headerMobileSubpageTextColorDefault: #484848;
+$headerMobileSubpageTextColorHover: #c2171d;
+
+// - Page header
+$pageHeaderBackground: #2a374e;
+
+// - Title
+$color-header1-dark: #1B1464;
+$color-header1-light: #328fd1;
+
+// - Back to top
+$colorBackToTop: #1B1464;
+$colorBackToTopHover: #c2171d;
+
+// - Input / Select
+$color-disabled: #ebebe4;
+$color-input-hover: #1B1464;
+$color-input-text: #484848;
+$color-input-text-hover: #2a374e;
+$color-input-border: #ebebeb;
+$color-input-border-hover: #2a374e;
+
+$color-select-hover: #b9e0ff;
+$color-select-hover-text: #1B1464;
+
+// - Filtro home (button)
+$filtro-btn: #c2171d;
+$filtro-btn-inactive: #ffffff;
+
+// - Footer
+$footer-bg: #2D6986;
+$footer-bottom-bg: #1d2a3d;
+
+// - Form
+$colorForm: #1B1464;
+$colorFormActive: #006837;
+
+// - Button > Default
+$color-button-default-bg: #c2171d; // #ff5a5f;
+$color-button-default-text: #ffffff;
+$color-button-default-bg-hover: #484848; // #5a6771
+$color-button-default-text-hover: #ffffff;
+$color-button-default-bg-click: #c2171d; // #484848;
+$color-button-default-text-click: #ffffff;
+
+
+
+$colucciVermelho: #c2171d;
+$colucciCinza: #5a6771;

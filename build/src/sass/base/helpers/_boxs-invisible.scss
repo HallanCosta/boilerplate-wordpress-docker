@@ -1,0 +1,29 @@
+.box-invisible-small { width:100%; padding:10px 0px; display:block; }
+.box-invisible { width:100%; padding:20px 0px; display:block; }
+.box-invisible-normal { width:100%; padding:25px 0px; display:block; }
+.box-invisible-medium { width:100%; padding:40px 0px; display:block; }
+.box-invisible-large { width:100%; padding:55px 0px; display:block; }
+
+@include for-size(tablet) {
+    .box-invisible-small,
+    .box-invisible,
+    .box-invisible-normal,
+    .box-invisible-medium,
+    .box-invisible-large {
+        &.hidden-tablet {
+            display: none;
+        }
+    }
+}
+
+@include for-size(phone) {
+    .box-invisible-small,
+    .box-invisible,
+    .box-invisible-normal,
+    .box-invisible-medium,
+    .box-invisible-large {
+        &.hidden-phone {
+            display: none;
+        }
+    }
+}

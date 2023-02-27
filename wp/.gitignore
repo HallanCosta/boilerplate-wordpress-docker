@@ -1,0 +1,14 @@
+/*.php
+!wp-config.php
+build/node_modules
+build/notes.txt
+build/.htaccess
+notes.log
+wp-admin
+!wp-content
+wp-content/*
+!wp-content/themes
+wp-content/themes/twentytwentyone
+wp-content/themes/index.php
+wp-includes
+*.html
