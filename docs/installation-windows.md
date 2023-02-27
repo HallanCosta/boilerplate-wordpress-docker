@@ -5,7 +5,7 @@ docker compose -f "docker-compose.yml" up -d --build
 ```
 
 # Create virtualhost on windows
-1. Inside directory (C:\Windows\System32\drivers\etc) add at end of line:
+1. Inside directory <b>`C:\Windows\System32\drivers\etc`</b> add at end of line:
 ```
 127.0.0.1 your-domain.test
 ```
@@ -26,7 +26,7 @@ CREATE DATABASE name_project DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
 # Install tables on database created
-1. Install the file <b>"install.sql"</b> in the created database that is inside the docs folder
+1. Install the file <b>`install.sql`</b> in the created database that is inside the docs folder
 
 2. Insert the query sql
 ```
