@@ -28,8 +28,6 @@ services:
       - 80:80
     volumes:
       - ./wp:/var/www/html/
-      # - ./wordpress.conf:/etc/apache2/sites-available/wordpress.conf
-      # - wordpress_data:/var/www/html
     restart: always
     environment:
       WORDPRESS_DB_HOST: db
@@ -37,28 +35,6 @@ services:
       WORDPRESS_DB_PASSWORD: 
       WORDPRESS_DB_NAME: name_project
 
-  # nginx:
-  #     container_name: nginx
-  #     image: nginx:latest
-  #     restart: unless-stopped
-  #     ports:
-  #         - 80:80
-  #         # - 443:443
-  #     volumes:
-  #         - ./nginx/conf:/etc/nginx/conf.d
-          # - ./certbot/conf:/etc/nginx/ssl
-          # - ./certbot/data:/var/www/html
-
-  # certbot:
-  #     container_name: certbot
-  #     image: certbot/certbot:latest
-  #     command: certonly --webroot --webroot-path=/var/www/html --email hallan@agencianeoplan.com --agree-tos --no-eff-email -d your-domain.test
-  #     volumes:
-  #         - ./certbot/conf:/etc/letsencrypt
-  #         - ./certbot/logs:/var/log/letsencrypt
-  #         - ./certbot/data:/var/www/html
-
 volumes:
     db_data:
     wp:
-
