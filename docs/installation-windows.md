@@ -13,9 +13,9 @@ docker compose -f "docker-compose.yml" up -d --build
 # Create database and add permission on user
 1. Access phpmyadmin with 
 ```
-Address: http://your-domain.test:8080<br>
-Username: root <br>
-Password:  <br>
+Address: http://your-domain.test:8080
+Username: root 
+Password:  
 ```
 
 password is empty
@@ -63,6 +63,8 @@ define( 'DB_HOST', 'db');
 ```
 
 # Access painel admin
-Address: http://your-domain.test/wp-login.php <br>
-Username: admin <br>
-Password: admin <br>
+```
+Address: http://your-domain.test/wp-login.php
+Username: admin 
+Password: admin 
+```
