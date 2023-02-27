@@ -21,7 +21,7 @@ CREATE DATABASE name_project DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
 # Install tables on database created
-1. Install file "install.sql" inside database created 
+1. Install the file <b>"install.sql"</b> in the created database that is inside the docs folder
 
 2. Insert the query sql
 ```

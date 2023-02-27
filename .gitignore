@@ -3,10 +3,12 @@
 build/node_modules
 notes.log
 wp-admin
-!wp-content
-wp-content/*
+!wp/wp-content
+wp/wp-content/*
 !wp-content/themes
-wp-content/themes/twentytwentyone
-wp-content/themes/index.php
+wp/wp-content/themes/twentytwentyone
+wp/wp-content/themes/twentytwentytwo
+wp/wp-content/themes/twentytwentythree
+wp/wp-content/themes/index.php
 wp-includes
 *.html
