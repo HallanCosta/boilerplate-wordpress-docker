@@ -13,8 +13,13 @@ docker compose -f "docker-compose.yml" up -d --build
 # Create database and add permission on user
 1. Access phpmyadmin with 
 ```
-http://your-domain.test:8080
+Address: http://your-domain.test:8080<br>
+Username: root <br>
+Password:  <br>
 ```
+
+password is empty
+
 2. Insert the query sql
 ```
 CREATE DATABASE name_project DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
